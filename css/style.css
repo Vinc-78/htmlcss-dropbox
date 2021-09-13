@@ -4,6 +4,7 @@
   box-sizing: border-box;
 }
 
+
 /************************************************
 * Selettori TAG
 ************************************************/
@@ -11,6 +12,7 @@ body {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
 }
+
 
 /* Set font */
 
@@ -24,8 +26,12 @@ h4, h5 { font-size: 16px;}
 
 p { font-size: 16px;}
 
+.small-font {font-size: 14px;}
 
-/* layout in row & column */
+
+/************************************************
+* Classi layout
+************************************************/
 
 .row:after {
   content: "";
@@ -33,38 +39,35 @@ p { font-size: 16px;}
   clear: both;
 }
 
-[class*="col"]{ float: left;}
+[class*="col-"]{ float: left;}
+
+.col-1_9 {width: calc(100% / 9);}
+
+.col-2_9 {width: calc(100% / 9 * 2);}
+
+.col-3_9 {width: calc(100% / 9 * 3);}
+
+.col-4_9 {width: calc(100% / 9 * 4);}
+
+.col-5_9 {width: calc(100% / 9 * 5);}
+
+.col-6_9 {width: calc(100% / 9 * 6);}
 
 
-.col-1_9 { width: calc(100% / 9);}
-
-.col-2_9 { width: calc(100% / 9 * 2);}
-
-.col-3_9 { width: calc(100% / 9 * 3); }
-
-.col-4_9 { width: calc(100% / 9 * 4); }
-
-.col-5_9 { width: calc(100% / 9 * 5); }
-
-.col-6_9 { width: calc(100% / 9 * 6); }
 
 
-/************************************************
-* Classi layout
-************************************************/
 .container-large {
   max-width: 1367px;
   width: 100%;
-  margin: auto
+  margin: auto;
 }
 
 .container {
   max-width: 1010px;
-  width: 100%;
-  margin: auto
+  margin: auto;
 }
 
-
+.bg-hero {padding-top: 50px;}
 
 /************************************************
 * Classi Utilities
@@ -75,41 +78,70 @@ p { font-size: 16px;}
   clear: both;
 }
 
+
+
 /************************************************
-* Sezioni
+* Header
 ************************************************/
 
+/* barnav */
 
 .navbar {position: fixed;
          top: 0;
-         width: 100%;
-         border:1px solid black; /* PROVVISORIO */
+         min-width: 100%;
+         display: inline-block;
+         background-color: #ffffff;
          line-height: 50px;
          padding: 10px 0;
+         z-index: 99;
         }
+ 
+.half-navbar {display: inline-block;} 
 
-.half-navbar {display: inline-block;}
+ul li { display: inline-block;}
 
-.half-navbar ul li { display: inline-block;}
+.link-nav { text-decoration: none;
+            color: black;
+            padding: 0 10px;}
 
-.half-navbar ul li a { text-decoration: none;
-                        color: black;
-                        padding: 0 10px;}
+.logo img{ vertical-align: sub;}                       
 
-                        
-.half-navbar .btn-blue{
+.bottone a {text-decoration: none;}
+
+.btn-blue{
+  text-decoration: none;    
   color:white;
   background-color: #0061FF;
   padding: 5px 25px;
-  margin: 25px 20px 25px 0;
-  }
+  } 
+  
+.left {min-width:48%;
+         text-align: left;}
 
-.logo{ vertical-align: sub;}
+.right  {min-width: 50%;
+        text-align: right;}
 
-.half-navbar.right  {width: 49%;
-                     text-align: right;
-}
+/* hero */
 
-.half-navbar.left {width: 50% ;
-                   text-align: left;}
+.bg-hero{ background-color: #b4d0e7; }
 
+.box-hero { position: relative;
+            top:10px;
+            padding-top: 100px;
+            
+           }
+
+.img-banner { width: 100%; }
+
+.pad50-banner { padding-top: 50px;}
+
+.test-banner, 
+.immagine-contein {padding-top: 100px;}
+
+.padding-top-50 {padding-top: 50px;}
+
+.pad10-banner {padding-top: 10px;}
+
+/************************************************
+* Main
+************************************************/
