@@ -64,6 +64,8 @@ p { font-size: 16px;}
   margin: auto
 }
 
+
+
 /************************************************
 * Classi Utilities
 ************************************************/
@@ -72,3 +74,42 @@ p { font-size: 16px;}
   display: table;
   clear: both;
 }
+
+/************************************************
+* Sezioni
+************************************************/
+
+
+.navbar {position: fixed;
+         top: 0;
+         width: 100%;
+         border:1px solid black; /* PROVVISORIO */
+         line-height: 50px;
+         padding: 10px 0;
+        }
+
+.half-navbar {display: inline-block;}
+
+.half-navbar ul li { display: inline-block;}
+
+.half-navbar ul li a { text-decoration: none;
+                        color: black;
+                        padding: 0 10px;}
+
+                        
+.half-navbar .btn-blue{
+  color:white;
+  background-color: #0061FF;
+  padding: 5px 25px;
+  margin: 25px 20px 25px 0;
+  }
+
+.logo{ vertical-align: sub;}
+
+.half-navbar.right  {width: 49%;
+                     text-align: right;
+}
+
+.half-navbar.left {width: 50% ;
+                   text-align: left;}
+
