@@ -339,3 +339,45 @@ ul li { display: inline-block;}
 /************************************************
 * in to azienda
 ************************************************/
+
+.in-to-factory {background-color: rgb(180, 208, 231);
+                line-height: 40vh;}
+
+
+
+.in-to-factory h2 { color:rgb(97, 8, 43);
+                    line-height: normal;
+                    }
+
+.in-to-factory-left {display: inline-block;
+                      width: 58%;
+                     vertical-align: middle;
+                      text-align: left;}
+
+.in-to-factory-right {display: inline-block;
+                        width: 40%;
+                      text-align: right;}
+
+/************************************************
+* domande frequenti
+************************************************/
+.domande-frequenti { padding-top:150px;}
+
+.domande-frequenti h2 { padding:50px 0;}
+
+.domande-frequenti-left {display: inline-block;
+                        width: 58%;
+                        vertical-align: middle;
+                        text-align: left;
+                        }
+
+.domande-frequenti-right {display: inline-block;
+                          width: 40%;
+                          text-align: right;}
+
+hr {border:1px ridge grey;
+    margin: 25px 0;}
+
+/************************************************
+* Footer
+************************************************/
