@@ -114,8 +114,7 @@ ul li { display: inline-block;}
 
 .bottone a {text-decoration: none;}
 
-.btn-blue{
-  text-decoration: none;    
+.btn-blue{    
   color:white;
   background-color: #0061FF;
   padding: 5px 25px;
@@ -212,16 +211,45 @@ ul li { display: inline-block;}
                   text-align: center;
                   border: 1px solid grey;}
 
-.team-box-enterprise { display: inline-block;
-                        border: 1px solid grey;
-                        width: 100%;}
 
-.team-box-left { line-height: 50px;
-                  
-                 padding-left: 30px;
+.team-box-enterprise { display: inline-block;
+                       border: 1px solid grey;
+                       width: 100%;
+                       padding: 10px 30px;}
+
+.team-box-left { display: inline-block;
+                 line-height: 50px;
                 }
                 
-.team-box-right {display: inline-block;
-                  
-                  padding-right: 30px;
+.team-box-right { display: inline-block;
+                  line-height: 50px;
+                  text-align: right;
                 }
+
+.team-box-annuncio {padding: 25px 0;}
+
+/************************************************
+* Main partner
+************************************************/
+
+.partner { padding-top:150px;}
+
+.partner-img img {max-width: 100%;}
+
+.partner-article {padding-left: 40px;}
+
+.partner-article h3 {padding-top: 20px;}
+
+.partner-article p {padding: 20px 0;
+                    line-height: 30px;}
+
+.btn-white {    
+  color:black;
+  background-color: white;
+  border:1px solid black;
+  padding: 5px 25px;
+  } 
+
+/************************************************
+* Main Operazioni su Dropbox
+************************************************/
