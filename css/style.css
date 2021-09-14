@@ -381,3 +381,29 @@ hr {border:1px ridge grey;
 /************************************************
 * Footer
 ************************************************/
+
+footer {background-color: black;}
+
+.f-conteiner {
+  max-width: 1200px;
+  width: 100%;
+  margin: auto;
+} 
+
+.footer-row { height: 50vh;}
+
+.col-1_5 {width: calc(100% / 5);}
+
+.footer-list li {display: block;
+                color:white;
+                padding:5px 0;}
+
+.footer-list {padding-top: 50px;}
+
+.footer-list h3 { color:white;
+                  padding:15px 0;}
+
+.logo-footer { color:grey;
+               border-top:1px solid grey;
+               width: 10%;
+               padding: 40px 0;}
