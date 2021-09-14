@@ -53,17 +53,22 @@ p { font-size: 16px;}
 
 .col-6_9 {width: calc(100% / 9 * 6);}
 
-
-
+/* In questo caso è da cambiare h1 
+.container-large {
+  max-width: 75vw;
+  width: 100%;
+  margin: auto;
+} */
 
 .container-large {
   max-width: 1367px;
   width: 100%;
   margin: auto;
-}
+} 
 
 .container {
   max-width: 1010px;
+  width: 100%;
   margin: auto;
 }
 
@@ -94,6 +99,7 @@ p { font-size: 16px;}
          line-height: 50px;
          padding: 10px 0;
          z-index: 99;
+         box-shadow: 5px 5px 20px grey;
         }
  
 .half-navbar {display: inline-block;} 
@@ -114,7 +120,7 @@ ul li { display: inline-block;}
   background-color: #0061FF;
   padding: 5px 25px;
   } 
-  
+
 .left {min-width:48%;
          text-align: left;}
 
@@ -126,7 +132,7 @@ ul li { display: inline-block;}
 .bg-hero{ background-color: #b4d0e7; }
 
 .box-hero { position: relative;
-            top:10px;
+            top:80px;
             padding-top: 100px;
             
            }
@@ -135,13 +141,56 @@ ul li { display: inline-block;}
 
 .pad50-banner { padding-top: 50px;}
 
+.pad10-banner {padding-top: 10px;}
+
 .test-banner, 
 .immagine-contein {padding-top: 100px;}
 
-.padding-top-50 {padding-top: 50px;}
 
-.pad10-banner {padding-top: 10px;}
 
 /************************************************
-* Main
+* Main Piani Business
 ************************************************/
+
+.piano_Business { padding-top: 200px;}
+
+.fatturazione { padding-top:50px;
+                padding-left:20px;}
+
+.fatturazione label { padding-right:50px;
+                       }
+
+.opzioni_Busines { margin-top: 30px;           
+                 }
+
+.opzioni { border:1px solid grey;
+           min-height: 1000px;
+           max-width: 90%;
+           margin:auto;}
+
+.opzioni-simbol { line-height: 48px;
+                  text-align: center;
+                  border-bottom: 1px solid grey;}
+
+.opzioni-title_cost { padding:50px 30px;}
+
+.opzioni-title_cost h3 { padding-bottom: 20px;}
+
+.opzioni-time{ color:grey;}
+
+.opzioni-list li{padding-top: 15px;}
+
+.opzioni-oppure { padding:20px 30px;
+                  display: inline-flex;
+                }
+
+.opzioni-oppure .line{ padding-bottom: 10px;
+                       border-bottom: 1px solid grey;}
+
+.opzioni-second-list {padding: 20px 30px;}
+
+.opzioni-list span::before{ content: "\2713";
+                            color:#0061FF;
+                            font-weight: bold;
+                            padding-right: 10px;
+                          }
