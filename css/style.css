@@ -94,7 +94,6 @@ p { font-size: 16px;}
 .navbar {position: fixed;
          top: 0;
          min-width: 100%;
-         display: inline-block;
          background-color: #ffffff;
          line-height: 50px;
          padding: 10px 0;
@@ -120,11 +119,12 @@ ul li { display: inline-block;}
   padding: 5px 25px;
   } 
 
-.left {min-width:48%;
-         text-align: left;}
+.left {min-width:50%;
+         float:left;}
 
 .right  {min-width: 50%;
-        text-align: right;}
+        padding-left: 19vw;
+        float:right;}
 
 /* hero */
 
@@ -292,17 +292,23 @@ ul li { display: inline-block;}
 
 .col-1_2 {width: calc(100% / 2);}
 
-.contenitore-quadrati { height: 60vh;}
-
+/* 
+PROMEMORIA
+per centrare e mantenere la forma dei quadrati 
+il centrale ha altezza (100vw / 3 ) pari alla larghezza 
+dei due laterali ossia dei due blocchi da quattro 
+con overflow mentre ogni 
+quadrato sarà la metà  ((100vw / 3) / 2  garantendo così la proporzionalità*/ 
 
 .quadrati-left{height: 100%;}
 
 .quadrati-right{height: 100%;}
 
-.quadrati-central{height: 100%;
+.quadrati-central{height: calc(100vw / 3);
+                  overflow: auto;
                   background-color: rgb(245, 245, 245);}
 
-.quadrato {height: 30vh;}
+.quadrato {height: calc((100vw / 3)/2);}
 
 .quadrato-central-article { padding: 50px 40px;}
 
@@ -347,36 +353,58 @@ ul li { display: inline-block;}
 
 .in-to-factory h2 { color:rgb(97, 8, 43);
                     line-height: normal;
+                    padding-top: 75px;
                     }
 
-.in-to-factory-left {display: inline-block;
-                      width: 58%;
+.in-to-factory-left { float:left;
+                      width: 60%;
                      vertical-align: middle;
                       text-align: left;}
 
-.in-to-factory-right {display: inline-block;
+.in-to-factory-right {vertical-align: middle;
+                      float:right;
                         width: 40%;
                       text-align: right;}
 
 /************************************************
 * domande frequenti
 ************************************************/
-.domande-frequenti { padding-top:150px;}
+.domande-frequenti { padding-top:150px;
+                     padding-bottom: 50px;}
 
-.domande-frequenti h2 { padding:50px 0;}
+.domande-frequenti h2 { padding:50px 0;
+                        border-bottom: 1px solid grey;}
 
-.domande-frequenti-left {display: inline-block;
-                        width: 58%;
-                        vertical-align: middle;
-                        text-align: left;
+.domande-item { border-bottom: 1px solid grey;
+                  position: relative;}
+
+.domande-item h5 { font-weight: bold;
+                    padding: 20px 0;
+                    padding-right: 50px;}
+                        
+.domande-icon {     position: absolute;
+                    right: 40px;
+                    transform:rotateZ(0deg);
+                    transition: transform 0.3s;
+                    }
+
+.domande-item-contenuto { margin-bottom:20px;
+                        overflow:hidden;
+                        height: 0;
+                        transition: height 0.3s;
                         }
 
-.domande-frequenti-right {display: inline-block;
-                          width: 40%;
-                          text-align: right;}
+.domande-item:focus .domande-item-contenuto { 
+                      height:250px;
+                      overflow: auto;
+                      }
 
-hr {border:1px ridge grey;
-    margin: 25px 0;}
+.domande-item:focus .domande-icon { 
+                      transform: rotateZ(180dg);
+                      }
+
+
+
 
 /************************************************
 * Footer
