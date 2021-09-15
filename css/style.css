@@ -123,7 +123,7 @@ ul li { display: inline-block;}
          float:left;}
 
 .right  {min-width: 50%;
-        padding-left: 19vw;
+        padding-left: 15%;
         float:right;}
 
 /* hero */
@@ -144,8 +144,26 @@ ul li { display: inline-block;}
 
 .test-banner, 
 .immagine-contein {padding-top: 100px;}
+/************************************************
+* Animazione freccia hero alternate
+************************************************/
+#arrow {
+  font-size: xx-large;
+  position: relative;
+  animation: discesa 1s ease infinite;
+}
 
+@keyframes discesa {
+  0% {top:0px;}
+  10%{top:10px;}
+  30%{top:30px;}
+  40%{top:40px;}
+  60%{top:60px;}
+  70%{top:70px;}
+  90%{top:90px;}
+  100%{top:100px;}
 
+}
 
 /************************************************
 * Main Piani Business
@@ -387,13 +405,13 @@ quadrato sarà la metà  ((100vw / 3) / 2  garantendo così la proporzionalità*
                     top:10px;
                     transition: transform 0.3s;
                     }
-
+/* il contenuto è nascosto con height 0 e overflow hidden */
 .domande-item-contenuto { margin-bottom:20px;
                         overflow:hidden;
                         height: 0;
                         transition: height 0.3s;
                         }
-
+/* Quando va in focus l'intero contenitore l'altezza aumenta */
 .domande-item:focus .domande-item-contenuto { 
                       height:250px;
                       overflow: auto;
