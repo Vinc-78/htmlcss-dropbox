@@ -383,8 +383,8 @@ quadrato sarà la metà  ((100vw / 3) / 2  garantendo così la proporzionalità*
                     padding-right: 50px;}
                         
 .domande-icon {     position: absolute;
-                    right: 40px;
-                    transform:rotateZ(0deg);
+                    right: 20px;
+                    top:10px;
                     transition: transform 0.3s;
                     }
 
@@ -400,7 +400,7 @@ quadrato sarà la metà  ((100vw / 3) / 2  garantendo così la proporzionalità*
                       }
 
 .domande-item:focus .domande-icon { 
-                      transform: rotateZ(180dg);
+                      transform: rotate(0.5turn);
                       }
 
 
