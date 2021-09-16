@@ -117,6 +117,7 @@ ul li { display: inline-block;}
   color:white;
   background-color: #0061FF;
   padding: 5px 25px;
+  cursor: pointer;
   } 
 
 .left {min-width:50%;
@@ -266,6 +267,7 @@ ul li { display: inline-block;}
   background-color: white;
   border:1px solid black;
   padding: 5px 25px;
+  cursor: pointer;
   } 
 
 /************************************************
@@ -444,6 +446,10 @@ footer {background-color: black;}
                 color:white;
                 padding:5px 0;}
 
+
+.footer-list li a {text-decoration: none;
+                   color:white; }
+
 .footer-list {padding-top: 50px;}
 
 .footer-list h3 { color:white;
@@ -453,3 +459,31 @@ footer {background-color: black;}
                border-top:1px solid grey;
                width: 10%;
                padding: 40px 0;}
+
+.logo-footer a {color:grey;}
+
+/************************************************
+* Effetti hover sui tasti
+************************************************/
+
+.navbar ul li a:hover{
+                padding: 10px 10px;
+                font-weight: bold;
+                color:white;
+                background-color: grey;
+            }              
+
+.btn-blue:hover{
+                color: #0061FF;
+                background-color: transparent;
+                border: solid #0061FF; }
+
+.btn-white:hover{
+                  border: solid #0061FF;
+                  color: #0061FF;
+              }
+              
+/* Inserito dopo a .btn-white:hover per sovrascrivere lo stile */
+.perhover { background-color: transparent;
+            border: solid white;
+            color: white}
